@@ -57,4 +57,10 @@ def patterns(value):
         print("* "*i)
     for j in range(value-1,0,-1):
         print("* "*j)
+
+    print("Question :11 ")
+    for i in range(1,value+1):
+        for j in range(i):
+            print((j%2)," ",end="")
+        print()
 patterns(n)
