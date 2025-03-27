@@ -87,11 +87,21 @@ def patterns(value):
             print(chr(65+j),end="")
         print()
 
-    print("Question :14")
+    print("Question :15")
     for i in range(value+1,0,-1):
         for j in range(i):
             print(chr(65+j),end="")
         print()
 
+    print("Question :16")
+    for i in range(value+1):
+        for j in range(i+1):
+            print(chr(65+i),end="")
+        print()
+
+    print("Question: 17")
+    for i in range(1,value+1):
+        print(" "*(value-i),end="")
+        print(chr(65+i),end="")
 
 patterns(n)
