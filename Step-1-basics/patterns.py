@@ -108,5 +108,39 @@ def patterns(value):
             print(chr(64+j),end="")
         print()
 
+    print("Questions :18")
+    for i in range(value,0,-1):
+        for j in range(i,value+1):
+            print(chr(64+j),end="")
+        print()
+    
+    print("Question :19")
+    for i in range(value,0,-1):
+        print("*" * i + " " * (2 * (value - i)) + "*" * i)
+    for i in range(1,value+1):
+        print("*" * i + " " * (2 * (value - i)) + "*" * i)
+
+    print("Question :20")
+    for i in range(1, value + 1):
+        print("*" * i + " " * (2 * (value - i)) + "*" * i)
+    for i in range(value - 1, 0, -1):
+        print("*" * i + " " * (2 * (value - i)) + "*" * i)
+
+    print("Question :21")
+    for i in range(value):
+        if i == 0 or i == value - 1:
+            print("* " * value)
+        else: 
+            print("* " + "  " * (value - 2) + "* ")
+    
+
+    print("Question :22")
+    size = 2 * value - 1  
+    for i in range(size):
+        for j in range(size):
+            num = value - min(i, j, size - i - 1, size - j - 1)
+            print(num, end=" ")
+        print()
+
 
 patterns(n)
